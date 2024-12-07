@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         col = GetComponent<CapsuleCollider>();
         Time.timeScale = 1;
+        coins = PlayerPrefs.GetInt("coins");
+        coinsText.text = coins.ToString();
         StartCoroutine(SpeedIncrease());
     }
 
@@ -104,6 +106,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             coins++;
+            PlayerPrefs.SetInt("coins", coins);
             coinsText.text = coins.ToString();
             Destroy(other.gameObject);
         }
