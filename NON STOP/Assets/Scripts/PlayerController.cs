@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
+    private CapsuleCollider col;
     private Animator anim;
     private Vector3 dir;
     [SerializeField] private float speed;
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         controller = GetComponent<CharacterController>();
+        col = GetComponent<CapsuleCollider>();
+        Time.timeScale = 1;
         StartCoroutine(SpeedIncrease());
     }
 
@@ -44,6 +47,11 @@ public class PlayerController : MonoBehaviour
         {
             if (controller.isGrounded)
                 Jump();
+        }
+
+        if (SwipeController.swipeDown)
+        {
+            StartCoroutine(Slide());
         }
 
         if (controller.isGrounded)
@@ -92,6 +100,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Coin")
         {
             coins++;
@@ -108,5 +117,16 @@ public class PlayerController : MonoBehaviour
             speed += 1;
             StartCoroutine(SpeedIncrease());
         }
+    }
+
+    private IEnumerator Slide()
+    {
+        col.center = new Vector3(0, -0.4f, 0);
+        col.height = 2;
+
+        yield return new WaitForSeconds(1);
+
+        col.center = new Vector3(0, 0.8398392f, 0);
+        col.height = 4.420422f;
     }
 }
