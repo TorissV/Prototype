@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Animator anim;
     private Vector3 dir;
-    [SerializeField] private int speed;
+    [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
+    [SerializeField] private int coins;
     [SerializeField] private GameObject losePanel;
+    [SerializeField] private Text coinsText;
 
     private int lineToMove = 1;
     public float lineDistance = 4;
+    private float maxSpeed = 110;
 
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         controller = GetComponent<CharacterController>();
+        StartCoroutine(SpeedIncrease());
     }
 
     private void Update()
@@ -58,6 +63,9 @@ public class PlayerController : MonoBehaviour
             controller.Move(moveDir);
         else
             controller.Move(diff);
+
+
+
     }
 
     private void Jump()
@@ -79,6 +87,26 @@ public class PlayerController : MonoBehaviour
         {
             losePanel.SetActive(true);
             Time.timeScale = 0;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Coin")
+        {
+            coins++;
+            coinsText.text = coins.ToString();
+            Destroy(other.gameObject);
+        }
+    }
+
+    private IEnumerator SpeedIncrease()
+    {
+        yield return new WaitForSeconds(1);
+        if (speed < maxSpeed)
+        {
+            speed += 1;
+            StartCoroutine(SpeedIncrease());
         }
     }
 }

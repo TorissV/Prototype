@@ -11,13 +11,15 @@ public class TileGenerator : MonoBehaviour
 
 
     [SerializeField] private Transform player;
-    private int startTiles = 6;
+    private int startTiles = 10;
 
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < startTiles; i++)
         {
+            if (i == 0)
+                SpawnTile(3);
             SpawnTile(Random.Range(0, tilePrefabs.Length));
         }
     }
