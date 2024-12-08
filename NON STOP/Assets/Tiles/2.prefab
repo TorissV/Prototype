@@ -2013,7 +2013,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9196177606847626578}
-  - component: {fileID: 7629488614658879790}
   m_Layer: 0
   m_Name: Deer_001 (1)
   m_TagString: obstacle
@@ -2039,27 +2038,6 @@ Transform:
   - {fileID: 5894190227184661489}
   m_Father: {fileID: 975079034189476590}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!65 &7629488614658879790
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326171294452961386}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &326887858212964570
 GameObject:
   m_ObjectHideFlags: 0
@@ -4234,37 +4212,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.68082494, y: 1.3650925, z: 0.066673815}
   m_Center: {x: 0, y: 0.62605834, z: 0.030080525}
---- !u!1 &623684494230525826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7051267118079249433}
-  m_Layer: 0
-  m_Name: 'Coin (1) (Missing Prefab with guid: f6557a168a695c94aa9f1c0d96e1cd25)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7051267118079249433
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623684494230525826}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 2.32, z: 77.01098}
-  m_LocalScale: {x: 1, y: 1, z: 2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 975079034189476590}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631627842185961677
 GameObject:
   m_ObjectHideFlags: 0
@@ -8378,8 +8325,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 4.591387, z: 2.6183434}
-  m_Center: {x: 0, y: 1.7956934, z: -0.111867905}
+  m_Size: {x: 1.1944618, y: 4.591387, z: 2.6183434}
+  m_Center: {x: -0.049323846, y: 1.7956935, z: -0.111867875}
 --- !u!1 &1236509713651144767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,7 +8942,7 @@ GameObject:
   - component: {fileID: 8381406493374992202}
   m_Layer: 0
   m_Name: Candy-Cane
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12589,8 +12536,6 @@ Transform:
   - {fileID: 1105366650579594531}
   - {fileID: 4551318742000288600}
   - {fileID: 2695630056915104453}
-  - {fileID: 4191766526844873731}
-  - {fileID: 7051267118079249433}
   - {fileID: 7975063161356039583}
   m_Father: {fileID: 3046694836947767770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23042,8 +22987,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1980825, y: 1.0894032, z: 0.7809887}
-  m_Center: {x: -0.022870868, y: 0.49438334, z: 0.0631628}
+  m_Size: {x: 0.2691417, y: 1.0894032, z: 0.7809887}
+  m_Center: {x: -0.019628918, y: 0.49438334, z: 0.06316279}
 --- !u!1 &3795232762789724117
 GameObject:
   m_ObjectHideFlags: 0
@@ -29285,8 +29230,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.097979, y: 7.806789, z: 3.29776}
-  m_Center: {x: -0.113058805, y: -0.6050818, z: -0.48561096}
+  m_Size: {x: 2.097979, y: 7.14483, z: 3.29776}
+  m_Center: {x: -0.11305878, y: -0.93606114, z: -0.48561087}
 --- !u!1 &4968480472573625198
 GameObject:
   m_ObjectHideFlags: 0
@@ -42090,37 +42035,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 3.5, z: 0.0000013518372}
   m_Center: {x: -0.00000011920929, y: 1.75, z: 0.000000065567065}
---- !u!1 &7166012891577518441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4191766526844873731}
-  m_Layer: 0
-  m_Name: 'Coin (Missing Prefab with guid: f6557a168a695c94aa9f1c0d96e1cd25)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4191766526844873731
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166012891577518441}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6413498, y: 2.6, z: 81.94896}
-  m_LocalScale: {x: 1, y: 1, z: 2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 975079034189476590}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7167608760313986994
 GameObject:
   m_ObjectHideFlags: 0
@@ -47903,7 +47817,7 @@ GameObject:
   - component: {fileID: 5582518787602502638}
   m_Layer: 0
   m_Name: Present-Box-01
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47992,8 +47906,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.1513433, y: 4.005146, z: 4.151344}
-  m_Center: {x: 0, y: 0.07309895, z: -0.000015258789}
+  m_Size: {x: 4.1513433, y: 4.005146, z: 5.5195136}
+  m_Center: {x: 0, y: 0.073098935, z: -0.6841012}
 --- !u!1 &8426250787207787538
 GameObject:
   m_ObjectHideFlags: 0
@@ -54115,10 +54029,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 975079034189476590}
     m_Modifications:
+    - target: {fileID: 882369125873939370, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.40127188
+      objectReference: {fileID: 0}
+    - target: {fileID: 882369125873939370, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.29668173
+      objectReference: {fileID: 0}
+    - target: {fileID: 882369125873939370, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.01027946
+      objectReference: {fileID: 0}
+    - target: {fileID: 882369125873939370, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.017643966
+      objectReference: {fileID: 0}
+    - target: {fileID: 882369125873939370, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.30443907
+      objectReference: {fileID: 0}
     - target: {fileID: 3505090450619456979, guid: 86a151ef3cc579a4b956d7a81b6329f2,
         type: 3}
       propertyPath: m_Name
       value: SantaClaus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835184269744696995, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.16383421
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835184269744696995, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.03037564
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835184269744696995, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.9675428
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835184269744696995, guid: 86a151ef3cc579a4b956d7a81b6329f2,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.06686489
       objectReference: {fileID: 0}
     - target: {fileID: 8185836186383839803, guid: 86a151ef3cc579a4b956d7a81b6329f2,
         type: 3}
